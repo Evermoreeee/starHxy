@@ -44,3 +44,12 @@
 不仅爱你伟岸的身躯，
 也爱你坚持的位置，
 足下的土地。 */
+
+
+const fs = require('fs');
+const util = require('util');
+
+function debug(...args) {
+  // Use a function like this one when debugging inside an AsyncHooks callback
+  fs.writeFileSync('log.out', `${util.format(...args)}\n`, { flag: 'a' });
+}
