@@ -15,3 +15,11 @@ interface B {
     c?:any
 }
 
+interface C {
+    a:number,
+    b:string,
+    c?:any
+}
+
+
+
