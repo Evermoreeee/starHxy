@@ -4,3 +4,4 @@ const asyncHook = async_hooks.createHook({
   init(asyncId, type, triggerAsyncId, resource) { },
   destroy(asyncId) { }
 });
+
